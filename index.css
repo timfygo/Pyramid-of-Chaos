@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+html {
+  height: 100%
+}
+
+body {
+  background-color: #a8efff;
+  color: "black";
+  font-family: "Playfair Display";
+  line-height: 1.7;
+  margin: 0;
+  padding: 20px 20px 0 20px;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 0px !important;
+}
+
+b {
+  font-weight: 900;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #dda15e;
+  margin-top: 24px;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+h4,
+h5,
+h6 {
+  font-size: 1.2em;
+}
+
+a {
+  color: #e0a96d;
+  text-decoration: none;
+  border-bottom: 2px solid #e0a96d;
+}
+
+a:hover {
+  color: #f4a261;
+  border-color: #f4a261;
+}
+
+ul,
+ol {
+  padding-left: 30px;
+}
+
+code {
+  background-color: #3c3c42;
+  border-radius: 6px;
+  color: #e9c46a;
+  padding: 0.4em 0.6em;
+  font-family: "Courier New", monospace;
+}
+
+pre code {
+  padding: 0;
+}
+
+pre {
+  background-color: #3c3c42;
+  border-radius: 6px;
+  padding: 1em;
+  overflow: auto;
+  box-shadow: 2px 2px 6px #000;
+}
+
+blockquote {
+  background-color: #2e2c35;
+  border-left: 4px solid #8d99ae;
+  padding-left: 2em;
+  margin-left: 0;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-right: 0.5em;
+  color: #ddd;
+  font-style: italic;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+  border: 3px solid #3c3c42;
+
+.grass-strip {
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+
+  /* Only paint the bottom 20px with the radioactive grass green */
+  background: linear-gradient(
+    to top,
+    #16ff00 20px,
+    transparent 20px
+  );
+}
+
+.pyramid-img {
+  display: block;
+  margin: 0 auto;
+  border: none;
+  border-radius: 0;
+  max-width: 100%;
+  height: auto;
+}
+
+.pyramid-stage {
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+@keyframes laserPulse {
+  0% {
+    transform: scaleX(0.7); /* Narrow beam */
+    opacity: 0.85;
+  }
+  50% {
+    transform: scaleX(1.4); /* Wide, intense beam */
+    opacity: 1;
+  }
+  100% {
+    transform: scaleX(0.9); /* Medium fluctuation */
+    opacity: 0.9;
+  }
+}
+
+.pulsing-laser {
+  animation: laserPulse 0.4s ease-in-out infinite alternate;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1f1c25;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #3c3c42;
+  border-radius: 6px;
+  border: 3px solid #1f1c25;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #5a5466;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #3c3c42 #1f1c25;
+}
+
+::-webkit-scrollbar-corner {
+  background: #1f1c25;
+}
